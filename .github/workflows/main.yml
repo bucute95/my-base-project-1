@@ -1,0 +1,24 @@
+name: Tu Dong Commit Moi Ngay
+on:
+  schedule:
+    - cron: '0 0 * * *' # Chạy tự động vào 7h sáng mỗi ngày (giờ VN)
+  workflow_dispatch: # Giúp bạn có nút để bấm chạy thủ công bất cứ lúc nào
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      
+      - name: Thay doi file
+        run: |
+          date >> history.txt
+          echo "Base Builder 2026" >> history.txt
+          
+      - name: Commit va Push
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add history.txt
+          git commit -m "Auto commit from Dell 7537"
+          git push
