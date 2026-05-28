@@ -22,5 +22,5 @@ jobs:
           git config --local user.email "trunghoai199533@gmail.com"
           git config --local user.name "bucute95"
           git add history.txt
-          git commit -m "chore: update project base network 2"
+          git commit -m "chore: update project base network 3"
           git push
