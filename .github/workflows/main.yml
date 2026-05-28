@@ -2,7 +2,7 @@ name: Tu Dong Commit Moi Ngay
 
 on:
   schedule:
-    - cron: '0 * * * *' # Chạy tự động vào 7h sáng mỗi ngày (giờ VN)
+    - cron: '5 * * * *' # Chạy tự động vào 7h sáng mỗi ngày (giờ VN)
   workflow_dispatch: # Giúp bạn có nút để bấm chạy thủ công bất cứ lúc nào
 
 jobs:
