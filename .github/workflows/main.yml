@@ -1,4 +1,5 @@
 name: Tu Dong Commit Moi Ngay
+
 on:
   schedule:
     - cron: '0 0 * * *' # Chạy tự động vào 7h sáng mỗi ngày (giờ VN)
@@ -9,12 +10,13 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      
-      - name: Thay doi file
+
+      - name: Create random commit content
         run: |
-          date >> history.txt
-          echo "Base Builder 2026" >> history.txt
-          
+          MESSAGES=("Update technical indicators" "Refactor smart contract code" "Add new build logs" "Check network status" "Sync with Base Mainnet")
+          RANDOM_MSG=${MESSAGES[$RANDOM % ${#MESSAGES[@]}]}
+          echo "$(date): $RANDOM_MSG from Dell 7537" >> history.txt
+
       - name: Commit va Push
         run: |
           git config --local user.email "action@github.com"
