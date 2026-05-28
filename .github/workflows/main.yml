@@ -15,12 +15,12 @@ jobs:
         run: |
           MESSAGES=("Update technical indicators" "Refactor smart contract code" "Add new build logs" "Check network status" "Sync with Base Mainnet")
           RANDOM_MSG=${MESSAGES[$RANDOM % ${#MESSAGES[@]}]}
-          echo "$(date): $RANDOM_MSG from Dell 7537" >> history.txt
+          echo "$(date): $RANDOM_MSG - Project Update" >> history.txt
 
       - name: Commit va Push
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
           git add history.txt
-          git commit -m "Auto commit from Dell 7537"
+          git commit -m "chore: update project logs [skip ci]"
           git push
