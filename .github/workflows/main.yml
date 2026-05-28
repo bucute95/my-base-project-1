@@ -2,7 +2,7 @@ name: Tu Dong Commit Moi Ngay
 
 on:
   schedule:
-    - cron: '0 0 * * *' # Chạy tự động vào 7h sáng mỗi ngày (giờ VN)
+    - cron: '0 * * * *' # Chạy tự động vào 7h sáng mỗi ngày (giờ VN)
   workflow_dispatch: # Giúp bạn có nút để bấm chạy thủ công bất cứ lúc nào
 
 jobs:
@@ -19,8 +19,8 @@ jobs:
 
       - name: Commit va Push
         run: |
-          git config --local user.email "action@github.com"
-          git config --local user.name "GitHub Action"
+          git config --local user.email "trunghoai199533@gmail.com"
+          git config --local user.name "bucute95"
           git add history.txt
           git commit -m "chore: update project logs [skip ci]"
           git push
