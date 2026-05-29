@@ -20,5 +20,5 @@ jobs:
           git config --local user.email "trunghoai199533@gmail.com"
           git config --local user.name "bucute95"
           git add history.txt
-          git commit -m "$RANDOM_MSG 8"
+          git commit -m "$RANDOM_MSG 9"
           git push
