@@ -11,14 +11,12 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: Create random commit content
+      - name: Update history and Commit
         run: |
           MESSAGES=("Update technical indicators" "Refactor smart contract code" "Add new build logs" "Check network status" "Sync with Base Mainnet")
           RANDOM_MSG=${MESSAGES[$RANDOM % ${#MESSAGES[@]}]}
           echo "$(date): $RANDOM_MSG - Project Update" >> history.txt
-
-      - name: Commit va Push
-        run: |
+        
           git config --local user.email "trunghoai199533@gmail.com"
           git config --local user.name "bucute95"
           git add history.txt
