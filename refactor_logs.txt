@@ -1,0 +1,1 @@
+Wed Jun 10 09:00:22 UTC 2026: chore: clean up unused variables
