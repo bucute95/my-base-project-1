@@ -1,0 +1,24 @@
+name: Auto Update Documentation
+
+on:
+  schedule:
+    - cron: '30 2 * * *' # Tự động chạy lúc 9h30 sáng hàng ngày (giờ VN)
+  workflow_dispatch: # Giúp bạn có nút bấm chạy ngay lập tức
+
+jobs:
+  docs:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Edit Docs and Commit
+        run: |
+          DOCS_MSGS=("docs: update project roadmap" "docs: fix typos in deployment guide" "docs: update API endpoints for Base network" "docs: refine installation steps")
+          RANDOM_DOC=${DOCS_MSGS[$RANDOM % ${#DOCS_MSGS[@]}]}
+          echo "$(date): $RANDOM_DOC" >> docs_changelog.txt
+          
+          git config --local user.email "trunghoai199533@gmail.com"
+          git config --local user.name "bucute95"
+          git add docs_changelog.txt
+          git commit -m "$RANDOM_DOC [skip ci]"
+          git push
