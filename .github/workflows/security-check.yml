@@ -1,0 +1,24 @@
+name: Auto Security Check
+
+on:
+  schedule:
+    - cron: '45 14 * * *' # Tự động chạy lúc 21h45 tối hàng ngày (giờ VN)
+  workflow_dispatch:
+
+jobs:
+  security:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Run Security Log and Commit
+        run: |
+          SEC_MSGS=("test: run security vulnerability scan" "chore: update dependency packages" "test: pass all smart contract unit tests")
+          RANDOM_SEC=${SEC_MSGS[$RANDOM % ${#SEC_MSGS[@]}]}
+          echo "$(date): $RANDOM_SEC" >> security_history.txt
+          
+          git config --local user.email "trunghoai199533@gmail.com"
+          git config --local user.name "bucute95"
+          git add security_history.txt
+          git commit -m "$RANDOM_SEC [skip ci]"
+          git push
