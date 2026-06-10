@@ -1,0 +1,24 @@
+name: Auto Code Refactor
+
+on:
+  schedule:
+    - cron: '15 5 * * *' # Tự động chạy lúc 12h15 trưa hàng ngày (giờ VN)
+  workflow_dispatch:
+
+jobs:
+  refactor:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Refactor and Commit
+        run: |
+          REF_MSGS=("refactor: optimize smart contract gas fees" "chore: clean up unused variables" "refactor: update compiler version for Base" "style: format solidity code structure")
+          RANDOM_REF=${REF_MSGS[$RANDOM % ${#REF_MSGS[@]}]}
+          echo "$(date): $RANDOM_REF" >> refactor_logs.txt
+          
+          git config --local user.email "trunghoai199533@gmail.com"
+          git config --local user.name "bucute95"
+          git add refactor_logs.txt
+          git commit -m "$RANDOM_REF [skip ci]"
+          git push
