@@ -21,3 +21,4 @@ Tue Jun 30 06:39:11 UTC 2026: docs: refine installation steps
 Wed Jul  1 06:52:26 UTC 2026: docs: fix typos in deployment guide
 Thu Jul  2 06:23:25 UTC 2026: docs: fix typos in deployment guide
 Fri Jul  3 06:09:38 UTC 2026: docs: update API endpoints for Base network
+Sat Jul  4 05:59:35 UTC 2026: docs: update project roadmap
