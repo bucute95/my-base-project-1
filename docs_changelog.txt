@@ -70,3 +70,4 @@ Wed Aug 19 03:25:21 UTC 2026: docs: fix typos in deployment guide
 Thu Aug 20 03:24:59 UTC 2026: docs: fix typos in deployment guide
 Fri Aug 21 03:29:56 UTC 2026: docs: update API endpoints for Base network
 Sat Aug 22 03:21:11 UTC 2026: docs: fix typos in deployment guide
+Sun Aug 23 03:29:53 UTC 2026: docs: refine installation steps
