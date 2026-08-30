@@ -77,3 +77,4 @@ Wed Aug 26 03:33:31 UTC 2026: docs: update project roadmap
 Thu Aug 27 13:01:38 UTC 2026: docs: refine installation steps
 Fri Aug 28 14:32:17 UTC 2026: docs: fix typos in deployment guide
 Sat Aug 29 09:18:35 UTC 2026: docs: fix typos in deployment guide
+Sun Aug 30 08:29:54 UTC 2026: docs: update project roadmap
