@@ -82,3 +82,4 @@ Mon Aug 31 08:51:02 UTC 2026: docs: update project roadmap
 Tue Sep  1 07:57:02 UTC 2026: docs: fix typos in deployment guide
 Wed Sep  2 07:16:51 UTC 2026: docs: update project roadmap
 Thu Sep  3 07:20:16 UTC 2026: docs: update project roadmap
+Fri Sep  4 07:22:48 UTC 2026: docs: update API endpoints for Base network
