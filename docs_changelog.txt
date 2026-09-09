@@ -87,3 +87,4 @@ Sat Sep  5 07:04:29 UTC 2026: docs: update project roadmap
 Sun Sep  6 07:15:57 UTC 2026: docs: update project roadmap
 Mon Sep  7 07:29:48 UTC 2026: docs: update project roadmap
 Tue Sep  8 07:23:11 UTC 2026: docs: update project roadmap
+Wed Sep  9 07:31:45 UTC 2026: docs: refine installation steps
