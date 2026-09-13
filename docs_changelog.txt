@@ -91,3 +91,4 @@ Wed Sep  9 07:31:45 UTC 2026: docs: refine installation steps
 Thu Sep 10 07:28:12 UTC 2026: docs: update API endpoints for Base network
 Fri Sep 11 07:26:23 UTC 2026: docs: update API endpoints for Base network
 Sat Sep 12 07:18:41 UTC 2026: docs: update project roadmap
+Sun Sep 13 07:37:09 UTC 2026: docs: fix typos in deployment guide
