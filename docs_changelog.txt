@@ -136,3 +136,4 @@ Sat Oct 24 07:32:39 UTC 2026: docs: fix typos in deployment guide
 Sun Oct 25 07:45:50 UTC 2026: docs: update API endpoints for Base network
 Mon Oct 26 08:02:26 UTC 2026: docs: update API endpoints for Base network
 Tue Oct 27 08:17:31 UTC 2026: docs: fix typos in deployment guide
+Wed Oct 28 08:54:18 UTC 2026: docs: update API endpoints for Base network
