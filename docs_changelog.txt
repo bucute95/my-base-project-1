@@ -162,3 +162,4 @@ Thu Nov 19 10:40:20 UTC 2026: docs: refine installation steps
 Fri Nov 20 10:20:55 UTC 2026: docs: refine installation steps
 Sat Nov 21 10:05:27 UTC 2026: docs: refine installation steps
 Sun Nov 22 10:08:40 UTC 2026: docs: update project roadmap
+Mon Nov 23 11:06:08 UTC 2026: docs: refine installation steps
